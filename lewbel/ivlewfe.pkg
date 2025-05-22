@@ -2,5 +2,6 @@ pkgname ivlewfe
 d ivlewfe.ado
 d ivlewfe.sthlp
 d README.md
+d stata.toc
 version 1.0.0
 
