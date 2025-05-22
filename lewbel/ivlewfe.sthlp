@@ -1,5 +1,5 @@
 {smcl}
-{* *! version 1.0.2 May 2025}{...}
+{* *! version 1.0.0 May 2025}{...}
 {title:{cmd:ivlewfe} — Lewbel (2012) 2SLS IV estimation with cross-section, time-series, pooled and (multiple levels of) fixed effects and clustered standard errors}
 
 {title:Description}
