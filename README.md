@@ -86,7 +86,7 @@ Lewbel, A. (2012). [Using Heteroskedasticity to Identify and Estimate Mismeasure
 ## 👤 Author
 
 **S. M. Woahid Murad**  
-School of Accounting, Economics and Finance
+School of Accounting, Economics and Finance,
 Curtin University  
 Email: S.Murad@curtin.edu.au  
 
