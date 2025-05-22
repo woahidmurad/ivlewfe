@@ -1,0 +1,8 @@
+pkgname ivlewfe
+d ivlewfe.ado
+d ivlewfe.sthlp
+d README.md
+version 1.0.0
+author S. M. Woahid Murad
+email S.Murad@curtin.edu.au
+description ivlewfe: Lewbel (2012) IV Estimator with Fixed Effects and Clustered Standard Errors in Stata
