@@ -49,20 +49,20 @@ Simple Lewbel IV with one fixed effect:
 
 ```stata
 webuse nlswork
-ivlewfe ln_w age tenure (tenure = ), fe(idcode)
+ivlewfe ln_w age msp occ_code (tenure = ), fe(idcode)
 ```
 
 With external instruments and small-sample adjustment:
 
 ```stata
-ivlewfe ln_w age tenure (tenure = union south), fe(idcode year) ///
+ivlewfe ln_w age msp occ_code (tenure = union south), fe(idcode year) ///
     cluster(idcode) small first saveinst(myiv)
 ```
 
 Excluding a variable from IV generation:
 
 ```stata
-ivlewfe ln_w age tenure (tenure = ), fe(idcode) skipiv(age)
+ivlewfe ln_w age msp occ_code (tenure = ), fe(idcode) skipiv(age)
 ```
 
 ---
