@@ -1,4 +1,3 @@
-
 program define IsStop, sclass 
     if `"`0'"' == "[" | `"`0'"' == "," | `"`0'"' == "if" | `"`0'"' == "in" | `"`0'"' == "" {
         sret local stop 1
