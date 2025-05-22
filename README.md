@@ -1,6 +1,6 @@
 # ivlewfe: Lewbel (2012) IV Estimator with Fixed Effects and Clustered Standard Errors in Stata
 
-**ivlewfe** is a Stata command that implements the heteroskedasticity-based instrumental variable (IV) estimator proposed by [Lewbel (2012)](https://doi.org/10.1080/07350015.2012.643126). It covers:
+**ivlewfe** is a Stata command that implements the heteroskedasticity-based instrumental variable (IV) estimator proposed by [Lewbel (2012)](https://doi.org/10.1257/aer.102.3.1263). It extends Lewbel’s method by allowing for:
 
 - High-dimensional fixed effects via `ivreghdfe`
 - Cluster-robust or heteroskedasticity-robust standard errors
@@ -20,8 +20,10 @@ This makes **ivlewfe** well-suited for applied researchers working with panel da
 To install the command directly from GitHub, type the following in your Stata command window:
 
 ```stata
-net install ivlewfe, from("https://github.com/woahidmurad/ivlewfe/edit/main/") replace
+net install ivlewfe, from("https://raw.githubusercontent.com/YOUR_USERNAME/ivlewfe/main/") replace
+```
 
+*Replace `YOUR_USERNAME` with your actual GitHub handle.*
 
 ---
 
@@ -31,7 +33,7 @@ The syntax follows a standard 2SLS pattern:
 
 ```stata
 ivlewfe depvar exogvars (endogvar = external_IVs), fe(fixed_effects) ///
-    [cluster(clustvar)] [robust] [saveinst(iv)] ///
+    [cluster(clustvar)] [robust] [saveinst(stub)] ///
     [first] [small]
 ```
 
@@ -45,7 +47,24 @@ ivlewfe depvar exogvars (endogvar = ), fe(fixed_effects)
 
 ## 💡 Examples
 
-See the Stata help file for ivlewfe
+Simple Lewbel IV with one fixed effect:
+
+```stata
+webuse nlswork
+ivlewfe ln_w age tenure (tenure = ), fe(idcode)
+```
+
+With external instruments and small-sample adjustment:
+
+```stata
+ivlewfe ln_w age tenure (tenure = union south), fe(idcode year) ///
+    cluster(idcode) small first saveinst(myiv)
+```
+
+Excluding a variable from IV generation:
+
+```stata
+ivlewfe ln_w age tenure (tenure = ), fe(idcode) skipiv(age)
 ```
 
 ---
@@ -69,15 +88,14 @@ Lewbel, A. (2012). [Using Heteroskedasticity to Identify and Estimate Mismeasure
 ## 👤 Author
 
 **S. M. Woahid Murad**  
-School of Accounting, Economics and Finance
-Curtin University, Australia 
+PhD Candidate, Curtin University  
 Email: S.Murad@curtin.edu.au  
 
 ---
 
 ## 🧩 Contributions and Feedback
 
-If you discover bugs, have feature requests, or want to contribute, feel free to open an issue or pull request on the [GitHub repository](https://github.com/woahidmurad/ivlewfe).
+If you discover bugs, have feature requests, or want to contribute, feel free to open an issue or pull request on the [GitHub repository](https://github.com/YOUR_USERNAME/ivlewfe).
 
 ---
 
