@@ -1,6 +1,6 @@
 # ivlewfe: Lewbel (2012) 2SLS IV estimation with cross-section, time-series, pooled and (multiple levels of) fixed effects and clustered standard errors
 
-**ivlewfe** is a Stata command that implements the heteroskedasticity-based instrumental variable (IV) estimator proposed by [Lewbel (2012)](https://doi.org/10.1257/aer.102.3.1263). It extends Lewbel’s method by allowing for:
+**ivlewfe** is a Stata command that implements the heteroskedasticity-based instrumental variable (IV) estimator proposed by [Lewbel (2012)](https://doi.org/10.1080/07350015.2012.643126). It extends Lewbel’s method by allowing for:
 
 - High-dimensional fixed effects via `ivreghdfe`
 - Cluster-robust or heteroskedasticity-robust standard errors
