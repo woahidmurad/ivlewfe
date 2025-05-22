@@ -20,10 +20,8 @@ This makes **ivlewfe** well-suited for applied researchers working with panel da
 To install the command directly from GitHub, type the following in your Stata command window:
 
 ```stata
-net install ivlewfe, from("https://raw.githubusercontent.com/YOUR_USERNAME/ivlewfe/main/") replace
+net install ivlewfe, from("https://github.com/woahidmurad/ivlewfe/main") replace
 ```
-
-*Replace `YOUR_USERNAME` with your actual GitHub handle.*
 
 ---
 
