@@ -1,5 +1,5 @@
 v 1
-d S. M. Woahid Murad, Curtin University (S.Murad@curtin.edu.au)
+d S. M. Woahid Murad, School of Accounting, Economics and Finance, Curtin University (S.Murad@curtin.edu.au)
 d Author of ivlewfe: Lewbel (2012) 2SLS IV estimation with cross-section, time-series, pooled and (multiple levels of) fixed effects and clustered standard errors
 p ivlewfe IVLEWFE - Lewbel (2012) 2SLS IV estimation with cross-section, time-series, pooled and (multiple levels of) fixed effects and clustered standard errors
 
