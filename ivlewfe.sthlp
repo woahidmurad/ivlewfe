@@ -87,7 +87,7 @@ Use quadratic and/or interaction term(s):
 
 {p 4 4 2}
 {stata "ivlewfe ln_w age c.age#c.age msp occ_code (tenure = ), fe(idcode year) saveinst(iv) small"} {break}
-{stata "ivlewfe ln_w age c.age#c.age msp c.age#race occ_code (tenure = ), fe(idcode year) saveinst(iv) small"}
+{stata "ivlewfe ln_w age c.age#c.age msp c.age#i.race occ_code (tenure = ), fe(idcode year) saveinst(iv) small"}
 
 
 
