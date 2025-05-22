@@ -1,4 +1,9 @@
+pkgname ivlewfe
 d ivlewfe.ado
 d ivlewfe.sthlp
 d README.md
+d stata.toc
 version 1.0.0
+author S. M. Woahid Murad
+email s.murad@curtin.edu.au
+description Lewbel (2012) IV estimator with fixed effects and clustered SEs
