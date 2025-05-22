@@ -209,5 +209,4 @@ if "`zvars'" == "" local zvars `exogs'
 capture drop _reghdfe_resid
 
 end
-
 exit
