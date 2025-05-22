@@ -1,9 +1,24 @@
-pkgname ivlewfe
-d ivlewfe.ado
-d ivlewfe.sthlp
-d README.md
-d stata.toc
-version 1.0.0
-author S. M. Woahid Murad
-email s.murad@curtin.edu.au
-description Lewbel (2012) IV estimator with fixed effects and clustered SEs
+v 1
+
+d Lewbel (2012) Instrumental Variables Estimator with Fixed Effects and Clustered Standard Errors
+d
+d KW: Lewbel
+d KW: instrumental variables
+d KW: fixed effects
+d KW: reghdfe
+d KW: ivreg2
+d
+d Requires: Stata version 15.0
+d
+d Required packages:
+d     ivreghdfe 
+d     ivreg2
+d     ivreghdfe
+d     ftools
+d
+d Distribution-Date: 20250518
+
+f ivlewfe.ado
+f ivlewfe.sthlp
+f README.md
+f stata.toc
