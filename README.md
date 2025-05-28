@@ -94,7 +94,7 @@ Email: S.Murad@curtin.edu.au
 
 ## 🧩 Contributions and Feedback
 
-If you discover bugs, have feature requests, or want to contribute, feel free to open an issue or pull request on the [GitHub repository](https://github.com/YOUR_USERNAME/ivlewfe).
+If you discover bugs, have feature requests, or want to contribute, feel free to open an issue or pull request on the [GitHub repository](https://github.com/woahidmurad/ivlewfe/).
 
 ---
 
